@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: rgb(236, 236, 235);
+  --color-card-background: rgb(16, 49, 107);
+  --color-card-border: rgb(10, 30, 70);
+  --color-box-shadow: rgba(0, 0, 0, 0.25);
+  --color-primary-button: rgb(226, 88, 34);
+  --color-primary-button-hover: rgb(200, 70, 25);
+  --color-secondary-button: rgb(16, 49, 107);
+  --color-secondary-button-hover: rgb(10, 35, 80);
+  --color-text-primary: rgb(0, 0, 0);
+  --color-text-on-card: rgb(255, 255, 255);
+  --color-text-muted: rgba(0, 0, 0, 0.6);
+  --color-divider: rgb(200, 200, 200);
+  --color-input-background: rgb(255, 255, 255);
+  --color-input-border: rgb(180, 180, 180);
+  --color-success: rgb(30, 150, 90);
+  --color-error: rgb(200, 50, 50);
+}
+
+:root {
+  /* --background: #ffffff;
+  --foreground: #171717; */
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
