@@ -1,22 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: rgb(236, 236, 235);
-  --color-card-background: rgb(16, 49, 107);
-  --color-card-border: rgb(10, 30, 70);
-  --color-box-shadow: rgba(0, 0, 0, 0.25);
-  --color-primary-button: rgb(226, 88, 34);
-  --color-primary-button-hover: rgb(200, 70, 25);
-  --color-secondary-button: rgb(16, 49, 107);
-  --color-secondary-button-hover: rgb(10, 35, 80);
-  --color-text-primary: rgb(0, 0, 0);
-  --color-text-on-card: rgb(255, 255, 255);
-  --color-text-muted: rgba(0, 0, 0, 0.6);
-  --color-divider: rgb(200, 200, 200);
-  --color-input-background: rgb(255, 255, 255);
-  --color-input-border: rgb(180, 180, 180);
-  --color-success: rgb(30, 150, 90);
-  --color-error: rgb(200, 50, 50);
+  --color-background: rgb(197, 228, 231); /* White background */
+  --color-card-background: rgb(0, 71, 75); /* Soft green-tinted white */
+  --color-card-border: rgb(0, 128, 64); /* Medium green border */
+  --color-box-shadow: rgba(0, 128, 64, 0.25); /* Greenish shadow */
+
+  --color-primary-button: #00474b; /* Vibrant green */
+  --color-primary-button-hover: #26c2ad; /* Darker green on hover */
+  --color-secondary-button: rgb(255, 255, 255); /* White secondary */
+  --color-secondary-button-hover: rgb(240, 255, 240); /* Light green hover */
+
+  --color-text-primary: rgb(34, 195, 172); /* Deep green text */
+  --color-text-on-card: rgb(0, 128, 64); /* Green text inside card */
+  --color-text-muted: rgba(0, 77, 38, 0.6); /* Muted green text */
+
+  --color-divider: rgb(200, 230, 200); /* Subtle green divider */
+  --color-input-background: rgb(255, 255, 255); /* White input field */
+  --color-input-border: rgb(0, 128, 64); /* Green border */
+
+  --color-success: rgb(0, 170, 85); /* Success green */
+  --color-error: rgb(200, 50, 50); /* Keep red for errors */
 }
 
 :root {
@@ -34,10 +38,4 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
