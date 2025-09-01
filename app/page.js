@@ -1,10 +1,12 @@
 import { Heading } from "@/components/Headinng";
 import MainCard from "@/components/MainCard";
+import Joke from "@/components/Quote ";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-4 items-center justify-center h-screen bg-background">
+    <main className="flex flex-col items-center justify-center min-h-screen gap-4 py-8 bg-background">
       <Heading />
+      <Joke />
       <MainCard />
     </main>
   );
